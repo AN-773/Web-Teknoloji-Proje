@@ -1,0 +1,139 @@
+body {
+  background-color: white;
+}
+
+@media (min-width: 1220px) {
+  body {
+    background-color: rgb(240, 239, 239);
+  }
+}
+
+hr {
+  border-top: 1px solid #707070;
+  opacity: 0.55;
+}
+
+main {
+  background-color: white;
+  margin: 3em auto;
+  padding: 2em;
+  border-radius: 8px;
+  max-width: 1200px;
+}
+
+.vhr {
+    border: none;
+    display: none;
+}
+
+/* Avatar */
+.avatar__img {
+  margin: 0 auto;
+  border-radius: 50%;
+  max-height: 350px;
+  max-width: 350px;
+  margin-top: 1em;
+  border: 3px solid white;
+}
+/* Avatar */
+
+/* Skill */
+.skill_item {
+  display: grid;
+  width: fit-content;
+}
+
+.skill_name {
+  grid-column: 1;
+  grid-row: 1;
+  min-width: 120px;
+}
+
+.progress_container {
+  display: flex;
+  max-width: max-content;
+  grid-column: 1;
+  grid-row: 2;
+  align-items: center;
+}
+
+.skill_progress {
+  position: relative;
+  background-color: #ffffff;
+  border-radius: 5px;
+  height: 8px;
+  margin-right: 1em;
+  width: 200px;
+}
+
+.skill_progress_fg {
+  position: absolute;
+  background-color: var(--clr-accent);
+  height: 100%;
+  top: 0;
+  left: 0;
+  border-radius: 5px;
+}
+
+.skill_level {
+  color: var(--clr-accent);
+}
+
+@media (min-width: 880px), (max-width: 769px) and (min-width: 450px) {
+  .skill_item {
+    display: grid;
+    width: fit-content;
+    grid-template-columns: min-content 300px;
+  }
+  .skill_name {
+    grid-column: 1;
+    grid-row: 1;
+    min-width: 120px;
+  }
+
+  .progress_container {
+    display: flex;
+    max-width: max-content;
+    grid-column: 2;
+    grid-row: 1;
+    align-items: center;
+  }
+  .skill_progress {
+    margin-left: 0em;
+  }
+
+  .vhr {
+      display: inline;
+    border: 1px solid #707070;
+}
+}
+/* /Skills */
+
+/* Experince */
+.techs {
+  display: flex;
+  flex-flow: wrap;
+  column-gap: 1em;
+}
+.tech {
+  background-color: var(--clr-accent);
+  padding: 0.25rem 0.5rem;
+  margin-top: calc(0.25em * 2);
+  color: var(--clr-dark);
+  font-size: var(--fs-body);
+  border-radius: 0.25rem;
+}
+/* /Experince */
+
+@media print {
+    .skill_progress,
+    nav {
+      display: none !important;
+    }
+    .vhr {
+        border: none;
+        display: inline;
+        height: 0;
+        width: 2em;
+    }
+  }
