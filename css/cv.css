@@ -16,14 +16,31 @@ hr {
 main {
   background-color: white;
   margin: 3em auto;
-  padding: 2em;
+  padding: 0.1em 0em 2em;
   border-radius: 8px;
   max-width: 1200px;
 }
 
+.lang {
+  position: relative;
+  margin: 2em 2em 1em;
+  border-radius: 8px;
+  background-color: teal;
+  width: fit-content;
+  left: calc(100% - 4em);
+}
+
+.lang_link {
+    color: white;
+    padding: 0.25em 0.5em;
+}
+
+.lang_link:hover {
+  color: aqua;
+}
 .vhr {
-    border: none;
-    display: none;
+  border: none;
+  display: none;
 }
 
 /* Avatar */
@@ -103,9 +120,9 @@ main {
   }
 
   .vhr {
-      display: inline;
+    display: inline;
     border: 1px solid #707070;
-}
+  }
 }
 /* /Skills */
 
@@ -126,14 +143,18 @@ main {
 /* /Experince */
 
 @media print {
-    .skill_progress,
-    nav {
-      display: none !important;
-    }
-    .vhr {
-        border: none;
-        display: inline;
-        height: 0;
-        width: 2em;
-    }
+  .skill_progress,
+  nav {
+    display: none !important;
   }
+  .vhr {
+    border: none;
+    display: inline;
+    height: 0;
+    width: 2em;
+  }
+
+  .lang {
+      display: none;
+  }
+}
