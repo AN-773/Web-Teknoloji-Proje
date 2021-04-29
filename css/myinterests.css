@@ -1,0 +1,34 @@
+body {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url(/assets/space-bg.jpg) no-repeat center center fixed;
+}
+
+#series, #movies {
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.card {
+    margin: 2em;
+    width: fit-content;
+    max-width: fit-content;
+    height: fit-content;
+    text-align: center;
+    transition: 500ms;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+}
+
+.card img {
+    width: 200px;
+    height: 200px;
+
+}
+
+@media (max-width: 564px) {
+    .card {
+        margin: 1em;
+    }
+}
