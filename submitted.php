@@ -14,6 +14,60 @@
 </head>
 
 <body>
+<header>
+        <nav class="navbar navbar-expand-md navbar-dark bg-dark">
+            <div class="container-fluid">
+                <a href="/index.html#intro" class="navbar-brand">
+                    <img src="/assets/logo.png" alt="logo" style="max-width: 200px;">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav mr-auto">
+                        <li class="nav-item active">
+                            <a href="/index.html" class="nav-link">
+                                Hakkında
+                            </a>
+                        </li>
+                        <li class="nav-item active">
+                            <a href="/cv.html" class="nav-link">
+                                Özgeçmiş
+                            </a>
+                        </li>
+                        <li class="nav-item active">
+                            <a href="/mycity.html" class="nav-link">
+                                Şehrim
+                            </a>
+                        </li>
+                        <li class="nav-item active">
+                            <a href="/culture.html" class="nav-link">
+                                Mirasımız
+                            </a>
+                        </li>
+                        <li class="nav-item active">
+                            <a href="myinterests.html" class="nav-link">
+                                İlgi alanlarım
+                            </a>
+                        </li>
+                        <li class="nav-item active">
+                            <a href="/contact.html" class="nav-link">
+                                İletişim
+                            </a>
+                        </li>
+                        <li class="nav-item active">
+                            <a href="/login.html" class="nav-link">
+                                Login
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
     <main>
         <div class="container">
             <div class="form_item d-flex align-items-center">
