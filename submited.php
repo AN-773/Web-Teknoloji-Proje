@@ -20,7 +20,7 @@
                 <label class="form-lable fw-bold m-0 p-0">Adı:</label>
                 <div class="form-control-plaintext ms-2 p-0">
                     <?php
-                        echo $_POST['name'];
+                        echo htmlspecialchars($_POST['name'], ENT_QUOTES, 'UTF-8');
                     ?>
                 </div>
             </div>
@@ -29,7 +29,7 @@
                 <label class="form-label fw-bold m-0 p-0">E-posta:</label>
                 <div class="form-control-plaintext ms-2 p-0">
                     <?php
-                        echo $_POST['email'];
+                        echo htmlspecialchars($_POST['email'], ENT_QUOTES, 'UTF-8');
                     ?>
                 </div>
             </div>
@@ -38,7 +38,7 @@
                 <label class="form-label fw-bold m-0 p-0">Cins:</label>
                 <div class="form-control-plaintext ms-2 p-0">
                     <?php
-                        echo $_POST['gender'];
+                        echo htmlspecialchars($_POST['gender'], ENT_QUOTES, 'UTF-8');
                     ?>
                 </div>
             </div>
@@ -48,7 +48,7 @@
                 <label class="form-label fw-bold m-0 p-0">İletişim nedeni:</label>
                 <div class="form-control-plaintext ms-2 p-0">
                     <?php
-                        echo $_POST['reason'];
+                        echo htmlspecialchars($_POST['reason'], ENT_QUOTES, 'UTF-8');
                     ?>
                 </div>
             </div>
@@ -57,7 +57,7 @@
                 <label class="form-label fw-bold m-0 p-0">Detaylar:</label>
                 <div class="form-control-plaintext ms-1 p-0">
                     <?php
-                        echo $_POST['details'];
+                        echo htmlspecialchars($_POST['details'], ENT_QUOTES, 'UTF-8');
                     ?>
                 </div>
             </div>

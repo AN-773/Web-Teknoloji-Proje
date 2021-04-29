@@ -76,7 +76,7 @@ if (isset($_POST['email']) && isset($_POST['password'])) {
             <div class="message text-success fs-3">
                 <?php
                     if (isset($_POST['email']) && isset($_POST['password'])) {
-                        echo "Hoşgeldiniz, " . $_POST['password'];
+                        echo "Hoşgeldiniz, " . htmlspecialchars($_POST['password'], ENT_QUOTES, 'utf-8');
                     }
                 ?>
             </div>
