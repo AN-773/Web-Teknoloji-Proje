@@ -38,11 +38,12 @@ function isEmail(s) {
     if (strArr.length != 2 || strArr[0].length < 1 || strArr[1] < 1)
         return false;
     var dotArr = strArr[1].split(".");
-    dotArr.forEach(element => {
+    for (var i = 0; i < dotArr.length; i++ ) {
+        var element = dotArr[i];
         if (element.length < 1) {
             return false;
         }
-    });
+    }
     return true;
 }
 
