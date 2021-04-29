@@ -51,6 +51,11 @@ if (isset($_POST['email']) && isset($_POST['password'])) {
                             </a>
                         </li>
                         <li class="nav-item active">
+                            <a href="/culture.html" class="nav-link">
+                                Mirasımız
+                            </a>
+                        </li>
+                        <li class="nav-item active">
                             <a href="myinterests.html" class="nav-link">
                                 İlgi alanlarım
                             </a>
